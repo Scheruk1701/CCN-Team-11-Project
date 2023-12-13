@@ -97,17 +97,17 @@ Step 4: Download and Organize Data
 Follow the instructions to download and organize the required datasets and models:
 
 - Download SMPL weights and place them in `./data/smplx/smpl/SMPL_NEUTRAL.pkl`.
-- 
+  
 - Download the NeuMan dataset and pretrained models or run the provided script: `bash setup_data_and_models.sh`.
 
 Step 5: Run the Pretrained Models
 
 - Render 360 views of a canonical human:
-- 
+  
 python render_360.py --scene_dir ./data/bike --weights_path ./out/bike_human/checkpoint.pth.tar --mode canonical_360
 
 - Render 360 views of a posed human:
-- 
+  
 python render_360.py --scene_dir ./data/bike --weights_path ./out/bike_human/checkpoint.pth.tar --mode posed_360
 
 WebRTC Application:
