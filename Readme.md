@@ -9,7 +9,7 @@ PROJECT REPORT
 NeuMan: Neural Human Radiance Field from a Single Video
  
  
-Objective
+Objective:
 The purpose of the document is to introduce the NeuMan framework, which focuses on reconstructing human and scene NeRF models from a single in-the-wild video. The framework aims to enable high-quality renderings of humans under novel poses and views without the need for multi-camera setups or manual annotations. It utilizes existing methods to estimate rough geometry and then trains two NeRF models: one for the human and one for the scene. The document also discusses the methodology, implementation details, tools used, results, challenges faced, and conclusions related to the NeuMan framework. Additionally, it highlights the importance of rendering humans and scenes realistically, enabling applications such as telegathering and creating augmented reality experiences.
 
 
@@ -55,8 +55,8 @@ Alternately, you can create the environment by executing:
 conda create -n neuman_env python=3.7 -y;
 conda activate neuman_env;
 conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=10.2 -c pytorch;
-# For RTX 30 series GPU with CUDA version 11.x, please use:
-# conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
+// For RTX 30 series GPU with CUDA version 11.x, please use:
+// conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
 conda install -c fvcore -c iopath -c conda-forge fvcore iopath;
 conda install -c bottler nvidiacub;
 conda install pytorch3d -c pytorch3d;
